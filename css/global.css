@@ -1,0 +1,251 @@
+
+* {  margin: 0;
+     padding: 0; 
+ }
+
+/* ===========================
+   ========= Headings ======== 
+   =========================== */
+h2 {font-size: 1.571em}	/* 22px */
+h3 {font-size: 1.429em}	/* 20px */
+h4 {font-size: 1.286em}	/* 18px */
+h5 {font-size: 1.143em}	/* 16px */
+h6 {font-size: 1em}		/* 14px */
+
+h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	line-height: 1.5;
+	margin-bottom: 1em;
+}
+
+/* ===========================
+   ======= Anchor style ====== 
+   =========================== */
+a {
+	outline: 0;
+	}
+
+a img {
+	border: 0px; 
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: #CF5C3F;
+	padding: 0 1px;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	background-color: #CF5C3F;
+	color: #fff;
+	text-decoration: none;
+}      
+
+p, td { color: rgb( 90, 125, 163);
+        }         
+
+caption { font-size: 1.286em;
+		color: gray; }		
+        
+address { text-align:center; 
+         color: MidnightBlue;
+         font-size:larger;}   
+   
+body { } 
+
+.body {
+		clear: both; 
+		margin: 0 auto; 
+		width: 90%;
+		font-size: 90%;
+	}
+
+	
+/* ===========================
+   ===== Main Navigation ===== 
+   =========================== */
+	
+.mainHeader {  margin: 1% auto 1% auto;
+ }      
+
+ .mainHeader img { 
+	width: 100%;
+	height: auto;
+	margin: 1% auto 1% auto;
+}	
+ 
+.mainHeader nav {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3); /* #666; */
+	font-size: 1.286em;
+	height: 40px;
+	line-height: 30px;
+	margin: 0 auto 30px auto;
+	//text-align: center;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+} 
+
+
+
+.mainHeader nav ul {
+	list-style: none; 
+	margin: 0 auto;
+}
+ 
+     
+.mainHeader nav li {
+	display: inline;
+	float: left;
+}    
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	color: #fff;
+	display: inline-block;
+	height: 30px;
+	padding: 5px 23px;
+	text-decoration: none;
+}
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+	background: #CF5C3F;
+	color: #fff;
+	text-shadow: none !important;
+}
+
+
+/* ===========================
+   ======= Content Area ====== 
+   =========================== */
+.mainContent h1, .mainContent  h2 {
+	color: #CF5C3F;
+}
+
+.mainContent  p, .mainContent  td{
+	font-size: 1.143em;
+}
+ 
+.mainContent  td{
+	padding: 8px;
+	background-color: lavender;
+	border: 1px solid white;
+}
+ 
+.mainContent {
+	overflow: hidden;
+	line-height: 25px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+   
+/* #accueil, #tarifs, #cours, #enseignants, #contact {         
+         display:inline-block;
+         vertical-align:middle;
+         width:75%;
+         margin-bottom: 40px;
+         font-size:large;
+ }
+ */
+ 
+.mainArticle{ display: inline-block; 
+			  width: 60%; 
+			  margin-left: 5%;}
+
+
+ .sidebar { display: inline-block;
+                width: 28%;
+				vertical-align: top;
+				float: right;}
+
+			  
+.top-sidebar { margin-bottom: 50px; }
+ 
+.imagesList  {
+	margin: 20px 0; 
+ }
+ 
+.imagesList img {
+ display: inline-block;
+ width: 25%; 
+ height:25%;
+} 
+
+ 
+ /* ===========================
+   ========= Footer ========== 
+   =========================== */
+     
+.mainFooter { 
+		width: 100%;
+		height: 5%;
+		margin: 2% auto;
+         background-color: rgba(0, 0, 0, 0.3);
+         text-align: right;
+         font-size: small;
+         line-height:3em; 
+		 border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+         }     
+
+      
+         
+#map_canvas {
+        width: 500px;
+        height: 400px;
+        margin:auto;
+        /*background-color: #CCC;*/
+      }
+	  
+
+
+.cours table {  margin:auto;       
+        color: rgb(61,94,139);}
+
+.cours caption { caption-side:bottom;          
+ }        
+ 
+.cours td { text-align: center; 
+     padding: 15px;
+     border: 3px solid white;
+     background-color: lavender;
+     }
+     
+.cours p { margin:10px;
+    padding:10px; 
+    text-align: center; 
+}
+ 	  
+/* ===========================
+   ====== Media Queries ====== 
+   =========================== */
+
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+.mainHeader { width: 95%; overflow: hidden; }   
+.mainArticle{ display: block; 
+			  width: 100%;  }
+.sidebar { display: block;
+                width: 100%;
+				margin: auto;}			  
+.top-sidebar { margin-bottom: 5px; }				
+.imagesList  {
+	display: none;
+ }	
+.mainHeader nav {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3); /* #666; */
+	font-size: 1em;
+	height: 40px;
+	line-height: 20px;
+	margin: 0 auto 20px auto;
+	//text-align: center;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+} 
+			
+}	  
